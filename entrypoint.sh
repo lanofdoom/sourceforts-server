@@ -13,6 +13,13 @@ touch /opt/game/sfclassic/addons/sourcemod/configs/maplists.cfg
 touch /opt/game/sfclassic/cfg/sourcemod/mapchooser.cfg
 touch /opt/game/sfclassic/cfg/sourcemod/rtv.cfg
 
+# Update server config files
+cp /opt/game/sfclassic/cfg/templates/server.cfg /opt/game/sfclassic/cfg/server.cfg
+echo "// Added by entrypoint.sh" >> /opt/game/sfclassic/cfg/server.cfg
+echo "hostname \"$SF_HOSTNAME\"" >> /opt/game/sfclassic/cfg/server.cfg
+echo "hostname \"$SF_HOSTNAME\"" > /opt/game/sfclassic/cfg/phase_build.cfg
+echo "hostname \"$SF_HOSTNAME\"" > /opt/game/sfclassic/cfg/phase_combat.cfg
+
 # Call srcds_linux instead of srcds_run to avoid restart logic
 LD_LIBRARY_PATH="/opt/game:/opt/game/bin:${LD_LIBRARY_PATH:-}" /opt/game/srcds_linux \
     -game sfclassic \
@@ -23,7 +30,6 @@ LD_LIBRARY_PATH="/opt/game:/opt/game/bin:${LD_LIBRARY_PATH:-}" /opt/game/srcds_l
     +ip 0.0.0.0 \
     +map "$SF_MAP" \
     +maxplayers 32 \
-    +hostname "$SF_HOSTNAME" \
     +rcon_password "$RCON_PASSWORD" \
     +sv_password "$SF_PASSWORD" \
     +sm_auth_by_steam_group_group_id "$STEAM_GROUP_ID" \
