@@ -58,7 +58,7 @@ http_file(
     name = "sourceforts",
     downloaded_file_path = "sourceforts.7z",
     sha256 = "e184bf761609159f0b42f7581df669ad547bcf09690a0ed9dc5ab3e212192b11",
-    urls = ["https://www.moddb.com/downloads/mirror/178710/128/2e3be87fea9bc1da4b8b7856c367ee7c/"],
+    urls = ["https://www.moddb.com/downloads/mirror/178710/127/26b43f67133e35df30501392385eb451/"],
 )
 
 http_file(
