@@ -99,7 +99,7 @@ container_layer(
 
 container_layer(
     name = "config",
-    directory = "/opt/game/sfclassic/cfg",
+    directory = "/opt/game/sfclassic/cfg/templates",
     files = [
         ":server.cfg",
     ],
