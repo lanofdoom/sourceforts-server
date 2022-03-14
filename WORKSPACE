@@ -58,7 +58,7 @@ http_file(
     name = "sourceforts",
     downloaded_file_path = "sourceforts.7z",
     sha256 = "e184bf761609159f0b42f7581df669ad547bcf09690a0ed9dc5ab3e212192b11",
-    urls = ["https://www.moddb.com/downloads/mirror/178710/127/26b43f67133e35df30501392385eb451/"],
+    urls = ["https://github.com/lanofdoom/sourceforts-server/releases/download/v1.0-RC7/SFClassic-1.0-RC7-fix.7z"],
 )
 
 http_file(
