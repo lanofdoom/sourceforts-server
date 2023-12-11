@@ -50,8 +50,8 @@ steamcmd_nugets()
 http_file(
     name = "auth_by_steam_group",
     downloaded_file_path = "auth_by_steam_group.tar.gz",
-    sha256 = "2b912b1df5331cf58868df283fdcf3e226b7a50e0a2170f7fd0d0581b18b1fdc",
-    urls = ["https://lanofdoom.github.io/auth-by-steam-group/releases/v2.2.0/auth_by_steam_group.tar.gz"],
+    sha256 = "95cb0dd02c46e81594d08edd6456ca2d929b3768235deedf8b8397aa05c1ee1f",
+    urls = ["https://github.com/lanofdoom/auth-by-steam-group/releases/download/v2.3.0/auth_by_steam_group.tar.gz"],
 )
 
 http_file(
