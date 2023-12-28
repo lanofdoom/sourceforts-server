@@ -1,5 +1,9 @@
 #!/bin/bash -ue
 
+# Install auth_by_steam_group dependencies
+apt-get update && apt-get install -y ca-certificates libcurl4
+
+# Set MOTD
 [ -z "${SF_MOTD}" ] || echo "${SF_MOTD}" > /opt/game/sfclassic/motd.txt
 
 # Generate mapcycle here to cut down on image build time and space usage.
