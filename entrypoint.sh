@@ -27,7 +27,6 @@ echo "hostname \"$SF_HOSTNAME\"" > /opt/game/sfclassic/cfg/phase_combat.cfg
 # Call srcds_linux instead of srcds_run to avoid restart logic
 LD_LIBRARY_PATH="/opt/game:/opt/game/bin:${LD_LIBRARY_PATH:-}" /opt/game/srcds_linux \
     -game sfclassic \
-    -tickrate 100 \
     -port "$SF_PORT" \
     -strictbindport \
     -usercon \
