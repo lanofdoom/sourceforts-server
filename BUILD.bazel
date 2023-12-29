@@ -43,7 +43,7 @@ pkg_tar(
 
 pkg_tar(
     name = "sourcemod_layer",
-    srcs = ["@sourcemod//file"],
+    deps = ["@sourcemod//file"],
     empty_dirs = ["/opt/game/sfclassic/addons/sourcemod/configs"],
     package_dir = "/opt/game/sfclassic",
 )
